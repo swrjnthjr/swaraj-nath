@@ -6,7 +6,7 @@ import FluidCursor from "./cursor.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    {/* <FluidCursor /> */}
+    <FluidCursor />
     <App />
   </StrictMode>,
 );

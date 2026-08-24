@@ -86,7 +86,7 @@ export default function CareerTimeline() {
 
       // Timeline Items & Dots Reveal
       const items = gsap.utils.toArray(".timeline-item");
-      items.forEach((item) => {
+      items.forEach((item: any) => {
         gsap.fromTo(
           item.querySelector(".timeline-dot"),
           { scale: 0, opacity: 0 },
