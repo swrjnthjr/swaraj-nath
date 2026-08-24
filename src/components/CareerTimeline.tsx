@@ -146,7 +146,7 @@ export default function CareerTimeline() {
           </h2>
         </div>
         <p className="text-sm text-neutral-500 mt-2 sm:mt-0">
-          4+ years of shipping scalable web & AI products
+          5+ years of shipping scalable web & AI products
         </p>
       </div>
 
