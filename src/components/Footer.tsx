@@ -3,6 +3,7 @@ import Github from "../assets/icons/github";
 import Linkedin from "../assets/icons/linkedin";
 import Button from "./Button";
 import { email, links } from "../constants";
+import cv from "../assets/Swaraj_Nath_Resume.pdf";
 
 export default function Footer() {
   return (
@@ -28,14 +29,14 @@ export default function Footer() {
                 variant="primary"
                 as="a"
                 href={email}
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-neutral-900 text-sm font-bold hover:bg-neutral-100 transition-colors shadow-sm"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-neutral-900! text-sm font-bold hover:bg-neutral-100 transition-colors shadow-sm"
               >
                 <Mail size={16} /> Say Hello <ArrowUpRight size={16} />
               </Button>
               <Button
                 variant="secondary"
                 as="a"
-                href="/Swaraj_Nath_Resume.pdf"
+                href={cv}
                 download
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 bg-neutral-800/60 text-white text-sm font-semibold hover:bg-neutral-800 transition-colors"
               >
