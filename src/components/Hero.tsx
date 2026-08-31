@@ -5,6 +5,7 @@ import ArrowUpRight from "../assets/icons/arrow-up-right";
 import Github from "../assets/icons/github";
 import Linkedin from "../assets/icons/linkedin";
 import Button from "./Button";
+import { email, links } from "../constants";
 
 gsap.registerPlugin(useGSAP);
 
@@ -45,6 +46,10 @@ const Hero = () => {
     { scope: containerRef },
   );
 
+  const handleRedirect = (url: string) => {
+    window.open(url, "_blank");
+  };
+
   return (
     <section ref={containerRef} className="relative h-screen max-w-4xl mx-auto">
       <div className="absolute flex w-full justify-center items-center top-[20%] z-2">
@@ -64,7 +69,12 @@ const Hero = () => {
             deliver intuitive digital products.
           </p>
           <div>
-            <Button variant="primary">
+            <Button
+              as="a"
+              href={email}
+              variant="primary"
+              className="inline-flex"
+            >
               Lets Collaborate
               <ArrowUpRight className="size-6" />
             </Button>
@@ -74,13 +84,19 @@ const Hero = () => {
         <div>
           <ul className="flex flex-col gap-4 max-md:justify-center max-md:mt-4">
             <li className="hero-social-item">
-              <Button variant="secondary">
+              <Button
+                variant="secondary"
+                onClick={() => handleRedirect(links.linkedin)}
+              >
                 <Linkedin className="size-6" />
                 Linkedin
               </Button>
             </li>
             <li className="hero-social-item">
-              <Button variant="secondary">
+              <Button
+                variant="secondary"
+                onClick={() => handleRedirect(links.github)}
+              >
                 <Github className="size-6" /> GitHub
               </Button>
             </li>

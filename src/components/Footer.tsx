@@ -1,6 +1,8 @@
 import { ArrowUpRight, FileText, Mail } from "lucide-react";
 import Github from "../assets/icons/github";
 import Linkedin from "../assets/icons/linkedin";
+import Button from "./Button";
+import { email, links } from "../constants";
 
 export default function Footer() {
   return (
@@ -22,19 +24,23 @@ export default function Footer() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-              <a
-                href="mailto:swaraj.nath.792@gmail.com"
+              <Button
+                variant="primary"
+                as="a"
+                href={email}
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white text-neutral-900 text-sm font-bold hover:bg-neutral-100 transition-colors shadow-sm"
               >
                 <Mail size={16} /> Say Hello <ArrowUpRight size={16} />
-              </a>
-              <a
-                href="/resume.pdf"
+              </Button>
+              <Button
+                variant="secondary"
+                as="a"
+                href="/Swaraj_Nath_Resume.pdf"
                 download
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full border border-neutral-700 bg-neutral-800/60 text-white text-sm font-semibold hover:bg-neutral-800 transition-colors"
               >
                 <FileText size={16} /> Download Resume
-              </a>
+              </Button>
             </div>
           </div>
 
@@ -56,7 +62,7 @@ export default function Footer() {
           {/* Social Pill Buttons */}
           <div className="flex items-center gap-3">
             <a
-              href="https://linkedin.com/in/swaraj-nath"
+              href={links.linkedin}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-neutral-800 bg-neutral-50 border border-neutral-200 rounded-full hover:bg-neutral-900 hover:text-white transition-colors"
@@ -64,7 +70,7 @@ export default function Footer() {
               <Linkedin className={"size-4"} /> LinkedIn
             </a>
             <a
-              href="https://github.com/swrjnthjr"
+              href={links.github}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-neutral-800 bg-neutral-50 border border-neutral-200 rounded-full hover:bg-neutral-900 hover:text-white transition-colors"
