@@ -56,7 +56,7 @@ export default function Footer() {
               Swaraj Nath
             </span>
             <p className="text-xs text-neutral-500 mt-0.5">
-              Senior Associate • Product Engineering
+              Senior Software Engineer • Frontend Engineer
             </p>
           </div>
 
