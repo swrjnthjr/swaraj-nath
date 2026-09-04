@@ -63,7 +63,7 @@ const Hero = () => {
 
       <div className="absolute px-8 flex max-md:flex-col w-full max-md:justify-center justify-between top-[50%] z-2">
         <div className="hero-content-left max-w-80 flex flex-col gap-4">
-          <h3 className="text-2xl font-bold">Software Engineer</h3>
+          <h3 className="text-2xl font-bold">Senior Software Engineer</h3>
           <p className="text-neutral-600 text-sm leading-relaxed">
             Bridging modern frontend engineering with applied generative AI to
             deliver intuitive digital products.
